@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <base href="/damienjacques/">
+    <title>Making a better poverty map</title>
+    <link rel="import" href="header.html">
+</head>
+
+<body>
+    <div w3-include-html="../../navbar/navbar-blog.html"></div>
+
+    <br>
+
+    &nbsp;
+    &nbsp;
+    &nbsp;
+    <div class="paragraph">
+
+        <h1>Making a better poverty map</h1>
+
+        <i>by Damien Jacques (Dalberg Data Insights), Trevor Monroe (World Bank), Carlos Rodriguez Catlelan (World Bank), Ingmar Weber (Qatar Computing Research Institute). Originally published on the <a href="http://blogs.worldbank.org/opendata/making-better-poverty-map">World Bank Blogs</a>.</i>
+
+
+        <img class="blog" src="../../../assets/img/poverty-map-hand-drawn.png" alt="Poverty map hand drawn">
+
+
+        <p>The digital economy is transforming how data is collected, processed and used for evidence-based decisions to monitor and achieve the Sustainable Development Goals. Promising new methods that combine traditional household survey data with non-traditional data sources (such as <a href="https://science.sciencemag.org/content/350/6264/1073">mobile phone data</a>, <a href="https://science.sciencemag.org/content/353/6301/790">satellite data</a> and <a href="https://arxiv.org/pdf/1905.01627.pdf">text data</a>) are creating opportunities to map poverty at a higher resolution and scale. Nonetheless, significant technical, practical and ethical challenges still hamper the operationalization of these methods.</p>
+
+        <p>To discuss these challenges, Dalberg Data Insights, the Qatar Computing Research Institute and the World Bank Group convened experts to join a Poverty Mapping workshop at the International Telecommunication Union (ITU) 2019 <a href="https://aiforgood.itu.int/">AI for Good</a> Global Summit. The goal of the workshop was to share knowledge and make plans to better combine traditional development data (such as household surveys, labor force surveys and censuses) with complementary sources of big data (satellite, mobile phones, social media) towards achieving more accurate, timely and cost-effective measures of poverty.</p>
+
+        <h3> Why better poverty measurements matter </h3>
+
+        <p>Current trends in poverty mapping owe much to <u><a href="http://documents.worldbank.org/curated/en/875491468320356640/More-than-a-pretty-picture-using-poverty-maps-to-design-better-policies-and-interventions">More Than A Pretty Picture</a></u>, a 2007 World Bank publication that spurred broader use of small area poverty maps to inform development strategies. Poverty is traditionally measured with data on income, assets and consumption. A new World Bank report, <u><a href="http://www.worldbank.org/en/publication/poverty-and-shared-prosperity">Piecing Together the Poverty Puzzle</a></u>, explains the latest estimates and trends in global poverty and broadens the way poverty is defined and measured. Poverty maps are important for the World Bank Group and its country clients to understand poverty and its determinants, in order to better design programs that reduce inequality and improve public service delivery among both the extreme poor<sup style="font-size: 75%">1</sup> and the bottom 40 percent. This translates into a demand for better data to support small-area estimates (granular data), now-casting (near real-time estimates), and large-scale monitoring (large-scale data).</p>
+
+        <p>Poverty maps inform evidence-based decisions on everything from targeting and distributing public investment to improve service delivery and infrastructure in the areas of greatest need (<a href="https://blogs.worldbank.org/developmenttalk/going-municipal-targeting-deprivation-new-evidence-croatia">Croatia</a> and <a href="https://coneval.org.mx/Medicion/Paginas/POBREZA-URBANA-EN-MEXICO-2015.aspx">Mexico</a>) to crisis response and vulnerability assessment related to natural disasters or conflicts and food security (<a href="http://fews.net/">FEWS NET</a>).</p>
+
+        <p>Traditional poverty measures are generally available at low frequency (every 5 to 10+ years) and are only representative at coarse granularity. For instance, <u><a href="http://documents.worldbank.org/curated/en/700611468172787967/pdf/WPS7252.pdf">Serajuddin et al., 2015</a></u> shows that between 2002 and 2011, among the 155 countries for which the World Bank Group monitors poverty data, 57 have less than two poverty data points (the minimum needed to adequately measure poverty in a ten-year period). Poverty data coverage is improving. Recently, the World Bank Group has pledged record support to conduct a <a href="http://documents.worldbank.org/curated/en/260501485264312208/Costing-household-surveys-for-monitoring-progress-toward-ending-extreme-poverty-and-boosting-shared-prosperity">multi-topic household survey every three years between 2016 and 2030</a> across 78 International Development Association Countries.</p>
+
+        <h3> Filling the gap with new data sources </h3>
+
+        <p><a href="https://onlinelibrary.wiley.com/doi/epdf/10.1111/joes.12307?author_access_token=drOM9gzSaj9NgFcRhx98E4ta6bR2k8jH0KrdpFOxC66v6vOB3m9DE2D0lBq_H6tm2TfeJwz2LT64705BECLLcpMSmUFvXCe9HD4wwACt6NszA9khqaPqTQX35_k_NoOR">Alternative methods</a> to produce poverty estimates in data scarce environments must confront several challenges including coverage and comparability. Satellite and mobile phone data are often used in emerging poverty mapping approaches that attempt to address such challenges. Satellites provide daily high-resolution images of the Earth from which land cover and land use features, as well as specific objects (such as buildings and cars), can be used to approximate household welfare (for example, <u><a href="https://cepr.org/sites/default/files/meets/2409/papers/hendersonpaper.pdf">nighttime lights</a></u> serve as an indicator of economic activity). Mobile phone data provide information on users’ phone consumption, mobility, social networks and financial transactions (mobile money), approximating poverty on an individual scale and in near real-time.</p>
+
+
+        <p>Unfortunately, due to lack of market share and mobile phone penetration, these data are typically <u><a href="https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0035319">biased and not representative of the entire population</a></u>. Working with sensitive mobile data also requires the development of additional processes to ensure that <u><a href="https://www.nature.com/articles/d41586-019-01679-5">individuals' privacy is preserved</a></u>. As a result, access to this data is not consistent, <u><a href="https://www.economist.com/science-and-technology/2014/10/27/waiting-on-hold">even in times of crisis</a></u><u>.</u></p>
+
+        <p>These constraints do not apply to satellite data, but it is still subject to <u><a href="https://dl.acm.org/citation.cfm?id=3136576">fundamental limitations</a>,</u> as all measures of human development cannot be seen from the sky. However, several new poverty mapping approaches have demonstrated that the careful combination of mobile and satellite data with (mobile) survey data can produce reliable estimates.</p>
+
+        <p>For example, <u><a href="https://science.sciencemag.org/content/350/6264/1073">Blumenstock et al. (2015)</a></u> produced estimates comparable to DHS about 10 times faster, and 50 times cheaper in terms of variable costs. Several other studies have combined mobile, satellite and survey data (<u><a href="https://www.sciencedirect.com/science/article/abs/pii/S0148296316304921">Njuguna et al., 2017</a></u>,<u><a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2016.0690">Steele et al., 2017</a></u> and <u><a href="https://www.pnas.org/content/114/46/E9783.short">Pokhriyal et al., 2017</a></u>). Additionally, researchers have explored the use of <u><a href="https://www.slideshare.net/IngmarWeber/using-advertising-data-to-model-migration-poverty-and-digital-gender-gaps">advertising data</a></u>, <u><a href="https://arxiv.org/pdf/1905.01627.pdf">Wikipedia</a></u> and <u><a href="https://www.pnas.org/content/114/50/13108">Google Street View</a></u> to map poverty. However, these approaches are still in research or pilot stage and it is important to note that big data is a complement, not a substitute for high-quality survey data.</p>
+
+        <p>By making survey and big data work better together—through better access, interoperability and survey design—the development community can speed up the process to validate and evaluate the costs and benefits of non-traditional approaches to poverty mapping that can improve the timeliness, coverage and quality of policy information. </p>
+
+        <h3>Putting high-resolution poverty measures into action</h3>
+
+        <p>The Poverty Mapping workshop participants identified several next steps to enable better accessibility, integration, and responsible use of diverse data sources and machine learning for poverty mapping, including:</p>
+
+        <ol>
+            <li><strong>Accelerate validation </strong>of promising new approaches through online competitions and programmatic activities to benchmark methods and assess their cost/benefit and suitability for purpose</li>
+            <li><strong>Strengthen local capacity </strong>to use and sustain high-resolution measures<strong> </strong>through reproducible practices in analytics and training content</li>
+            <li><strong>Invest in data access arrangements </strong>including <u><a href="https://bigdatatoolkit.gsma.com/resources/BD4SG_The_need_for_sustainable_business_models.pdf">sustainable business models</a> </u>that move beyond philanthropic funding models and legal and technical arrangements that enable more institutionally and country-owned data accessible as a public good</li>
+            <li><strong>Improve data infrastructure</strong> of public and commercial data through standards and formats that promote spatial interoperability,<strong> </strong><a href="https://www.planet.com/pulse/satellite-interoperability-workshop/">Analysis Ready Data</a>, and <a href="https://www.cogeo.org/">cloud workflows</a></li>
+        </ol>
+        <p>Since the United Nations published <u><a href="http://www.undatarevolution.org/wp-content/uploads/2014/11/A-World-That-Counts.pdf">A World That Counts</a></u> five years ago, there has been an upsurge in poverty mapping innovations that use big data and machine learning. While their potential to complement official statistics has been narrowly demonstrated, widespread adoption remains to be achieved. The development community needs a steady evolution in the data ecosystem to put high resolution poverty maps into action to advance progress on SDG 1—No Poverty.</p>
+    </div>
+
+</body>
+
+</html>

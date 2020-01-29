@@ -1,0 +1,89 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body {
+    margin: 4%;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.title {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+
+.left-aligned p {
+    float: left;
+
+}
+
+.paragraph {
+    margin-right: 40%;
+    min-width: 300px;
+}
+
+
+.first {
+    margin-top: 3em;
+}
+
+h4 {
+    margin-top: 2em;
+}
+
+.big-icon {
+    font-size: 2rem;
+}
+
+.ai {
+    display: inline-block;
+    font: normal normal normal 14px/1 Academicons;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    text-decoration: none;
+    color: #207FA2;
+
+}
+
+.blog {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    border: 2px solid black;
+}
+
+.blog-intext {
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 2em;
+
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+}
+
+.fig-legend{
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2em;
+}
+
+.blog_list{
+    margin: 2em
+}
