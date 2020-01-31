@@ -87,3 +87,7 @@ a {
 .blog_list {
     margin: 2em
 }
+
+li{
+    margin-bottom: 1em;
+}
