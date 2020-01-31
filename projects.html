@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Damien Jacques - About</title>
+    <link rel="import" href="header.html">
+</head>
+
+<body>
+    <div w3-include-html="content/navbar/navbar.html"></div>
+
+    <br>
+
+    &nbsp;
+    &nbsp;
+    &nbsp;
+
+    <div class="wrap-collabsible paragraph" style="margin-bottom:1em">
+        <input id="collapsible" class="toggle" type="checkbox">
+        <label for="collapsible" class="lbl-toggle">Consulting</label>
+        <div class="collapsible-content">
+            <div class="content-inner">
+                <div w3-include-html="content/projects/consulting.html"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap-collabsible paragraph" style="margin-bottom:1em">
+        <input id="collapsible2" class="toggle" type="checkbox">
+        <label for="collapsible2" class="lbl-toggle">Research</label>
+        <div class="collapsible-content">
+            <div class="content-inner">
+                <div w3-include-html="content/projects/research.html"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap-collabsible paragraph" style="margin-bottom:1em">
+        <input id="collapsible3" class="toggle" type="checkbox">
+        <label for="collapsible3" class="lbl-toggle">Entrepreneurship</label>
+        <div class="collapsible-content">
+            <div class="content-inner">
+                <div w3-include-html="content/projects/entrepreneurship.html"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--footer-->
+    <div w3-include-html="content/footer/footer.html"></div>
+
+    <style scoped>
+        .wrap-collabsible {
+            margin-bottom: 1.2rem 0;
+        }
+
+        input[type='checkbox'] {
+            display: none;
+        }
+
+        .lbl-toggle {
+            display: block;
+            font-weight: bold;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: all 0.25s ease-out;
+            margin-bottom: 1em;
+        }
+
+        .lbl-toggle:hover {
+            color: grey;
+        }
+
+        .lbl-toggle::before {
+            content: ' ';
+            display: inline-block;
+
+            border-top: 5px solid transparent;
+            border-bottom: 5px solid transparent;
+            border-left: 5px solid currentColor;
+            vertical-align: middle;
+            margin-right: .7rem;
+            transform: translateY(-2px);
+
+            transition: transform .2s ease-out;
+        }
+
+        .toggle:checked+.lbl-toggle::before {
+            transform: rotate(90deg) translateX(-3px);
+        }
+
+        .collapsible-content {
+            max-height: 0px;
+            overflow: hidden;
+            transition: max-height .25s ease-in-out;
+        }
+
+        .toggle:checked+.lbl-toggle+.collapsible-content {
+            max-height: 100vh;
+        }
+
+        .toggle:checked+.lbl-toggle {
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+
+        .collapsible-content .content-inner {
+            background: #f7f7f7;
+            border-bottom-left-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            padding: .5rem 1rem;
+        }
+
+    </style>
+
+
+</body>
+
+</html>
