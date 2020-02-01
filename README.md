@@ -6,7 +6,7 @@ In terms of content, the aim is to showcase the different dimensions of my profe
 
 From a code architecture point of view, I decided to start from a blank page by not using any existing framework or development tools for two reasons: (i) complete control of each component (ii) made easy on a github page.
 
-I make intensive use of the `w3IncludeHTML()` function introduced by [w3](https://www.w3schools.com/howto/howto_html_include.asp).
+I make intensive use of the `w3IncludeHTML()`, a function introduced by [w3](https://www.w3schools.com/howto/howto_html_include.asp).
 
 ```
 function w3IncludeHTML(cb) {

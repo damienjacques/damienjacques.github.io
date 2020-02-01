@@ -24,9 +24,10 @@ body {
 
 }
 
-.paragraph {
-    margin-right: 40%;
-    min-width: 300px;
+@media all and (min-width: 38em) {
+    .paragraph {
+        margin-right: 40%;
+    }
 }
 
 
