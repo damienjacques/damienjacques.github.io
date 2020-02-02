@@ -36,3 +36,15 @@ function w3IncludeHTML(cb) {
 This function allows me to integrate HTML chunks into an HTML page in a very simple way (to my knowledge, although a rather obvious function, it is not natively integrated into the HTML code).  Thanks to this, I can organize my code in small chunks in the content folder, making it much easier to develop the site and read the code.
 
 The disadvantage is the blinking effect when the different elements load. I think this should be fixable with some javascript but I haven't yet taken the time to go deeper into this problem. 
+
+To import js scripts and css stylesheet, I use a simulated approach by including in the header using `link rel="import"`:
+
+```
+<link rel="import" href="header.html">
+```
+
+If you use this approach, it's worth noting that `<meta>` tags must still be included in each individual page (especially `viewport` to ensure responsiveness):
+```
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+```
+
