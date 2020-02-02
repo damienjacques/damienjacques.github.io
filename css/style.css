@@ -52,6 +52,7 @@ html {
     background: #ffffff;
     color: #333333;
     font-family: 'Lato', sans-serif;
+    font-size: 16px;
     /* Always show the vertical scrollbar to prevent `jumps`
      of page content after navigating from a very short page
      that does not scroll to a long pager */
@@ -69,6 +70,7 @@ html {
     -ms-text-size-adjust: 100%;
     /* Highlight color for WebKit-bases touch devices. */
     -webkit-tap-highlight-color: rgba(113, 239, 172, .5);
+    
 }
 
 @media all and (max-width: 30em) {
