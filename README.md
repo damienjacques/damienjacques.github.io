@@ -8,7 +8,7 @@ From a code architecture point of view, I decided to start from a blank page by 
 
 I make intensive use of the `w3IncludeHTML()`, a function introduced by [w3](https://www.w3schools.com/howto/howto_html_include.asp):
 
-```
+```js
 function w3IncludeHTML(cb) {
     var z, i, elmnt, file, xhttp;
     z = document.getElementsByTagName("*");
@@ -39,12 +39,13 @@ The disadvantage is the blinking effect when the different elements load. I thin
 
 To import js scripts and css stylesheet, I use a simulated approach by including in the header using `link rel="import"`:
 
-```
+```html
 <link rel="import" href="header.html">
 ```
 
 If you use this approach, it's worth noting that `<meta>` tags must still be included in each individual page (especially `viewport` to ensure responsiveness):
-```
+
+```html
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 ```
 
