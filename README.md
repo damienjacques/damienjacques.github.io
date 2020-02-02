@@ -1,10 +1,10 @@
 # Professional website: damienjacques.com
 
-This directory contains the code of my professional website. In terms of design, my goal is to create something timeless (I don't want to change it every year) by its minimalist and sober aspect. I was greatly inspired by [Ulf Aslak's website](https://ulfaslak.com/b), whose graphic direction I like very much.
+This directory contains the code of my professional website. In terms of design, my goal was to create something timeless (I don't want to change it every year) by its minimalist and sober aspect. I was greatly inspired by [Ulf Aslak's website](https://ulfaslak.com/b), whose graphic direction I like very much.
 
 In terms of content, the aim is to showcase the different dimensions of my professional experience in a clear and simple way. It should also be possible to find more detailed content if the visitor wishes.
 
-From a code architecture point of view, I decided to start from a blank page by not using any existing framework or development tools for two reasons: (i) complete control of each component (ii) made easy on a github page.
+From a code architecture point of view, I decided to start from a blank page by not using any existing framework or development tools for two reasons: (i) complete control of each component (ii) easy to render on a github page.
 
 I make intensive use of the `w3IncludeHTML()`, a function introduced by [w3](https://www.w3schools.com/howto/howto_html_include.asp).
 
