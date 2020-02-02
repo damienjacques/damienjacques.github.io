@@ -78,7 +78,7 @@ html {
         /* We decrease the font-size a little-bit for tiny
        screens. Because this stylesheet uses relative units
        everywhere, everything scales nicely. */
-        font-size: 1em;
+        font-size: 16px;
     }
 }
 
