@@ -1,6 +1,6 @@
 # Professional website: damienjacques.com
 
-This directory contains the code of my professional website. In terms of design, my goal is to create something timeless (I don't want to change it every year) by its minimalist and sober aspect. 
+This directory contains the code of my professional website. In terms of design, my goal is to create something timeless (I don't want to change it every year) by its minimalist and sober aspect. I was greatly inspired by [Ulf Aslak's website](https://ulfaslak.com/b), whose graphic direction I like very much.
 
 In terms of content, the aim is to showcase the different dimensions of my professional experience in a clear and simple way. It should also be possible to find more detailed content if the visitor wishes.
 
@@ -36,5 +36,3 @@ function w3IncludeHTML(cb) {
 This function allows me to integrate HTML chunks into an HTML page in a very simple way (to my knowledge, although a rather obvious function, it is not natively integrated into the HTML code).  Thanks to this, I can organize my code in small chunks in the content folder, making it much easier to develop the site and read the code.
 
 The disadvantage is the blinking effect when the different elements load. I think this should be fixable with some javascript but I haven't yet taken the time to go deeper into this problem. 
-
-Translated with www.DeepL.com/Translator (free version)
