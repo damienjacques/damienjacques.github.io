@@ -38,12 +38,12 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25em;
+    font-size: 1.25rem;
     line-height: 1.2;
 }
 
 h4 {
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 /* =====  3 Site Layout  ==================================================== */
@@ -52,7 +52,6 @@ html {
     background: #ffffff;
     color: #333333;
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
     /* Always show the vertical scrollbar to prevent `jumps`
      of page content after navigating from a very short page
      that does not scroll to a long pager */
@@ -73,27 +72,13 @@ html {
     
 }
 
-@media all and (max-width: 30em) {
-    html {
-        /* We decrease the font-size a little-bit for tiny
-       screens. Because this stylesheet uses relative units
-       everywhere, everything scales nicely. */
-        font-size: 16px;
-    }
-}
-
 body {
     margin-left: 4%;
     margin-top: 4%;
-    margin-bottom: 5em;
+    margin-bottom: 5rem;
     display: none;
 }
 
-.title {
-    color: black;
-    font-size: 1.5em;
-    text-decoration: none;
-}
 
 
 .left-aligned p {
@@ -109,7 +94,7 @@ body {
 
 
 .first {
-    margin-top: 3em;
+    margin-top: 3rem;
 }
 
 
@@ -134,8 +119,8 @@ a {
 
 .blog {
     display: block;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
     margin-left: auto;
     margin-right: auto;
@@ -145,8 +130,8 @@ a {
 
 .blog-intext {
     display: block;
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 
     margin-left: auto;
     margin-right: auto;
@@ -156,30 +141,30 @@ a {
 .fig-legend {
     text-align: center;
     font-style: italic;
-    margin-bottom: 2em;
+    margin-bottom: 2rem;
 }
 
 .blog_list {
-    margin: 2em
+    margin: 2rem
 }
 
 li {
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 
 
 a.button1 {
     display: inline-block;
-    padding: 0.35em 1.2em;
-    border: 0.1em solid black;
-    margin: 0 0.3em 0.3em 0;
-    border-radius: 0.12em;
+    padding: 0.35rem 1.2rem;
+    border: 0.1rem solid black;
+    margin: 0 0.3rem 0.3rem 0;
+    border-radius: 0.12rem;
     box-sizing: border-box;
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
-    font-size: 0.95em;
+    font-size: 0.95rem;
     color: black;
     text-align: center;
     transition: all 0.2s;
@@ -193,6 +178,6 @@ a.button1:hover {
 @media all and (max-width:30em) {
     a.button1 {
         display: block;
-        margin: 0.4em auto;
+        margin: 0.4rem auto;
     }
 }
