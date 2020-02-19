@@ -1,6 +1,6 @@
 # Professional website: damienjacques.com
 
-This directory contains the code of my professional website. In terms of design, my goal was to create something timeless (I don't want to change it every year) by its minimalist and sober aspect. I was greatly inspired by [Ulf Aslak's website](https://ulfaslak.com/b), whose graphic direction I like very much.
+This directory contains the code of my professional website. In terms of design, my goal was to create something timeless (I don't want to change it every year) by its minimalist and sober aspect. I was greatly inspired by [Ulf Aslak's website](https://ulfaslak.com/), whose graphic direction I like very much.
 
 In terms of content, the aim is to showcase the different dimensions of my professional experience in a clear and simple way. It should also be possible to find more detailed content if the visitor wishes.
 
@@ -43,7 +43,7 @@ If you use this approach, it's worth noting that `<meta>` tags must still be inc
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 ```
 
-To import js scripts and css stylesheet, I wanted to use a similar approach by including `hearder.html` in the header tags using the awesome function `link rel="import"`:
+To import js scripts and css stylesheet, I wanted to use a similar approach by including `header.html` in the header tags using the awesome function `link rel="import"`:
 
 ```html
 <link rel="import" href="header.html">
