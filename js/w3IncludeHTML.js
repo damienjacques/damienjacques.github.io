@@ -1,4 +1,4 @@
-function w3IncludeHTML(cb) {
+(function w3IncludeHTML(cb) {
     var z, i, elmnt, file, xhttp;
     z = document.getElementsByTagName("*");
     for (i = 0; i < z.length; i++) {
@@ -19,5 +19,5 @@ function w3IncludeHTML(cb) {
         }
     }
     if (cb) cb();
-}
+})();
 

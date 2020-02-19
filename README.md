@@ -37,15 +37,19 @@ This function allows me to integrate HTML chunks into an HTML page in a very sim
 
 The disadvantage is the blinking effect when the different elements load. I think this should be fixable with some javascript but I haven't yet taken the time to go deeper into this problem. 
 
-To import js scripts and css stylesheet, I use a simulated approach by including in the header using `link rel="import"`:
-
-```html
-<link rel="import" href="header.html">
-```
-
 If you use this approach, it's worth noting that `<meta>` tags must still be included in each individual page (especially `viewport` to ensure responsiveness):
 
 ```html
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 ```
+
+To import js scripts and css stylesheet, I wanted to use a similar approach by including `hearder.html` in the header tags using the awesome function `link rel="import"`:
+
+```html
+<link rel="import" href="header.html">
+```
+But unfortunately this function is not yet supported by most browsers, so I had to copy and paste the header wherever necessary.
+
+
+
 
