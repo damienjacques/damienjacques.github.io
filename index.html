@@ -18,15 +18,16 @@
 
     <!--  Scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
 
     <script async src="js/w3IncludeHTML.js"></script>
+    <script async src="js/index_animation.js"></script>
+
 
     <script>
         $(document).ready(function() {
             $('body').show();
         });
-
     </script>
 </head>
 
@@ -34,8 +35,28 @@
     <!--navbar-->
     <div w3-include-html="content/navbar/navbar.html"></div>
 
+    <div class="js-viz">
+        <div class="stagger-visualizer"> </div>
+        <style scoped>
+            .stagger-visualizer {
+                display: flex;
+                /*flex-wrap: wrap;*/
+                justify-content: center;
+                align-items: center;
+                margin-left: 15%;
+                margin-right: 15%;
+                margin-top: 28vh;
+            }
+
+            .stagger-visualizer div {
+                /*position: absolute;*/
+                width: 1rem;
+                height: 8rem;
+                border: 0.5px solid #373535;
+                background-color: #fcfcfc;
+            }
+        </style>
+    </div>
     <!--footer-->
     <div w3-include-html="content/footer/footer.html"></div>
-</body>
-
-</html>
+</body></html>
